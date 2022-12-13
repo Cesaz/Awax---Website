@@ -7,6 +7,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
     width: 80px;
     height: 80px;
     background-color: #B28756;
+    border-radius: 40px;
 }
 
 .menu {
@@ -65,10 +67,194 @@ header {
     color: #CCC;
 }
 
-.banner {
-    height: calc(100vh - 100px);
-    background-color: #333;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: bottom;
+.button {
+    display: inline-block;
+    background-color: #B28756;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
 }
+
+/*BEGINNING BANNER AREA*/
+    .banner {
+        height: calc(100vh - 100px);
+        background-color: #333;
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden
+    }
+
+    .banner .sliders {
+        width: 1000vw;
+        height: 100%;
+    }
+
+    .banner .slide {
+        width: 100vw;
+        height: 100%;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .banner .slidearea {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .banner h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .banner h1 span {
+        color: #B28756;
+    }
+
+    .banner h2 {
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+    .banner .sliders_pointers {
+        width: 100vw;
+        height: 20px;
+        position: absolute;
+        margin-top: -50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .pointer {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #B28756;
+        border-radius: 8px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .banner .pointer.active {
+        background-color: #B28756;
+    }
+/*END BANNER AREA*/
+
+/*BEGINNING ABOUT US AND SERVICES*/
+    /*GENERAL*/
+        .default {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .default .section_title, .section_desc {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .default .section_title {
+            font-size: 20px;
+        }
+
+        .default .section_desc {
+            font-size: 12px;
+            color: #CCC;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .default .section_body {
+            max-width: 1140px;
+            margin: auto;
+        }
+
+        .default.light {
+            background-color: #F7F7F7;
+        }
+
+        .default.light .section_title, .default.light .section_body {
+            color: #000000;
+        }
+
+        .default.dark {
+            background-color: #000000;
+        }
+
+        .default.dark .section_title, .default.dark .section_body {
+            color: #FFFFFF;
+        }
+    /*GENERAL*/
+    
+    /*ABOUT US*/
+        .section_aboutus {
+            display: flex;
+        }
+
+        .section_aboutus_left {
+            flex: 1;
+        }
+
+        .section_aboutus_left p {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .section_aboutus_right {
+            width: 520px;
+            text-align: center;
+        }
+
+        .section_aboutus_right img {
+            width: 480px;
+            box-shadow: 0px 5px 10px #333;
+        }
+    /*ABOUT US*/
+
+    /*SERVICES*/
+        .section_services {
+            display: flex;
+        }
+
+        .section_service {
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid #333;
+            padding: 15px;
+        }
+
+        .section_service:first-child {
+            border-left: 1px solid #333;
+        }
+
+        .section_service h4 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 18px
+        }
+
+        .section_service p {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #999;
+        }
+    /*SERVICES*/
+
+
+
+
+
+
+
+/*END ABOUT US AND SERVICES*/
