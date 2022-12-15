@@ -151,7 +151,7 @@ header {
     }
 /*END BANNER AREA*/
 
-/*BEGINNING ABOUT US AND SERVICES*/
+/*BEGINNING ABOUT US, SERVICES, PROJECTS*/
     /*GENERAL*/
         .default {
             padding-top: 50px;
@@ -251,10 +251,91 @@ header {
         }
     /*SERVICES*/
 
+    /*PROJECTS MENU*/
+        .section_projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section_projects_filters {
+            border: 1px solid #CCC;
+            background-color: #EEE;
+            border-radius: 30px;
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .section_projects_filters ul, .section_projects_filters li {
+            list-style: none;
+        }
+
+        .section_projects_filters li {
+            display: inline-block;
+            padding: 10px;
+            text-transform: uppercase;
+            font-size: 13px;
+            border-left: 1px solid #CCC;
+            color: #555;
+            border-bottom: 3px solid #EEE;
+            cursor: pointer;
+        }
+
+        .section_projects_filters li:hover, .section_projects_filters li.active {
+            border-bottom: 3px solid #B28756;
+        }
+
+        .section_projects_filters li:first-child {
+            border-left: 0;
+        }
+    /*PROJECTS MENU*/
+
+    /*PROJECTS CONTENT*/
+        .section_projects_photos {
+            width: 100vw;
+            max-width: 1140px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section_projects_photo {
+            width: 280px;
+        }
+
+        .section_projects_photo_area {
+            margin: 10px;
+            width: 260px;
+            height: 160px;
+        }
+        .section_projects_photo_area img {
+            width: inherit;
+            height: inherit;
+        }
+
+        .section_projects_photo_info {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: inherit;
+            height: inherit;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color: #FFFFFF;
+        }
+
+        .section_projects_photo_info h5 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .section_projects_photo_area:hover .section_projects_photo_info {
+            display: flex;
+        }
+    /*PROJECTS CONTENT*/    
 
 
 
-
-
-
-/*END ABOUT US AND SERVICES*/
+/*END ABOUT US, SERVICES, PROJECTS*/
