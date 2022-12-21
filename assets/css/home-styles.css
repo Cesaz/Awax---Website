@@ -545,10 +545,162 @@ header {
     /*COMPANYS*/
 
     /*PRICE*/
+        .prices_area {
+            display: flex;
+        }
 
+        .price {
+            flex: 1;
+            background-color: #FFFFFF;
+            margin-right: 20px;
+            padding: 30px;
+            text-align: center;
+        }
 
+        .price:last-child {
+            margin-right: 0;
+        }
 
-    
+        .product_type {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .product_price {
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        .product_period {
+            color: #999;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .product_descrip {
+            color: #555;
+            font-size: 12px;
+        }
+
+        .prices_area .dark {
+            background-color: #000000;
+        }
     /*PRICE*/
+
+    /*FEATURES*/
+        .features .section_body {
+            max-width: initial;
+        }
+
+        .products_features {
+            overflow: hidden;
+        }
+
+        .products_features .sliders {
+            width: 1000vw;
+            height: 100%;
+        }
+
+        .products_features .slide {
+            width: 100vw;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .products_features .slidearea {
+            display: flex;
+            width: 1100px;
+            max-width: 1440px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #CCC;
+            margin: auto;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-bottom:40px;
+        }
+
+        .product_photo {
+            flex: 1;
+            text-align:right;
+        }
+
+        .product_photo img {
+            width: 300px;
+            margin-right: 30px;
+        }
+
+        .right_area {
+            flex: 1;
+        }
+
+        .product_feature {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .product_feature img {
+            width: 25px;
+            height: 25px;
+            margin-right: 20px;
+        }
+
+        .product_feature div {
+            flex: 1;
+            color: #999;
+            line-height: 20px;
+        }
+
+        .product_feature div h4 {
+            color: #000000;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .products_features .sliders_pointers {
+            width: 100vw;
+            height: 20px;
+            display: flex;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .products_features .pointer {
+            width: 15px;
+            height: 15px;
+            border: 2px solid #B28756;
+            border-radius: 8px;
+            margin-left: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    
+        .products_features .pointer.active {
+            background-color: #B28756;
+        }
+
+        .products_feature_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .products_feature_button a {
+            margin-left: 15px;
+        }
+    /*FEATURES*/
+
+    /*SOME FACTS*/
+        
+
+
+    /*SOME FACTS*/
 
 /*END ABOUT US, SERVICES, PROJECTS*/
