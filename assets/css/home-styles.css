@@ -80,6 +80,11 @@ header {
     border-radius: 20px;
 }
 
+.button:hover {
+    background-color: #999;
+    color: #000000;
+}
+
 /*BEGINNING BANNER AREA*/
     .banner {
         height: calc(100vh - 100px);
@@ -589,6 +594,11 @@ header {
         .prices_area .dark {
             background-color: #000000;
         }
+
+        .prices_area .dark:hover {
+            background-color: #999;
+            color: #000000;
+        }
     /*PRICE*/
 
     /*FEATURES*/
@@ -698,9 +708,153 @@ header {
     /*FEATURES*/
 
     /*SOME FACTS*/
-        
+        .section_facts {
+            display: flex;
+        }
 
+        .section_fact {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+        }
 
+        .section_fact h3 {
+            color: #B28756;
+            font-size: 50px;
+        }
+
+        .section_fact .scratch {
+            background-color: #999;
+            width: 22px;
+            height: 4px;
+            display: flex;
+            margin: auto;
+            
+        }
+
+        .section_fact h4 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 18px
+        }
+
+        .section_fact p {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #999;
+        }
     /*SOME FACTS*/
+
+    /*TELL ABOUT US*/
+        .social_share {
+            padding: 20px;
+        }
+
+        .social_media_body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left_side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left_side img {
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
+        }
+
+        .left_side h4 {
+            text-transform: uppercase;
+            color: #999;
+            font-weight: 600;
+            font-size: 13px;
+            margin-right: 50px;
+        }
+
+        .right_side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social_media_share {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .social_media_logo {
+            display: flex;
+            width: 35px;
+            height: 35px;
+            border-radius: 35px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+        }
+
+        .twitter_logo {
+            background-color: #00acee;
+        }
+
+        .linkedin_logo {
+            background-color: #0e76a8;
+        }
+
+        .facebook_logo {
+            background-color: #3b5998;
+        }
+
+        .googleplus_logo {
+            background-color: #db4a39;
+        }
+
+        .pinterest_logo {
+            background-color: #c8232c;
+        }
+
+        .twitter_logo:hover, .linkedin_logo:hover, .facebook_logo:hover, .googleplus_logo:hover, .pinterest_logo:hover {
+            background-color: #000000;
+            cursor: pointer;
+        }
+    /*TELL ABOUT US*/
+
+    /*CONTACT US*/
+        .section_contact_us {
+            max-width: 450px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section_contact_us input[type=text], .section_contact_us input[type=email], .section_contact_us textarea {
+            display:block;
+            width:100%;
+            height:40px;
+            border:0;
+            background:transparent;
+            border-bottom:1px solid #CCC;
+            outline:0;
+            margin-top:10px;
+        }
+
+        .section_contact_us textarea {
+            height: 100px;
+            resize: none;
+            font-size: 15px;
+        }
+
+
+
+
+
+
+
+
+    /*CONTACT US*/
 
 /*END ABOUT US, SERVICES, PROJECTS*/
