@@ -35,6 +35,10 @@ header {
     border-radius: 40px;
 }
 
+.menu_opener {
+    display: none;
+}
+
 .menu {
     flex: 1;
     display: flex;
@@ -749,6 +753,7 @@ header {
     /*TELL ABOUT US*/
         .social_share {
             padding: 20px;
+            color: #999;
         }
 
         .social_media_body {
@@ -770,7 +775,6 @@ header {
 
         .left_side h4 {
             text-transform: uppercase;
-            color: #999;
             font-weight: 600;
             font-size: 13px;
             margin-right: 50px;
@@ -956,6 +960,11 @@ header {
         background-color: #B28756;
     }
 
+    .footer_descrip_and_subscrive {
+        display: flex;
+        margin-left: 50px;
+    }
+
     footer h4 {
         margin-top: 150px;
         margin-left: 8px;
@@ -1004,3 +1013,490 @@ header {
         margin-top: 30px;
     }
 /*FOOTER*/
+
+@media (min-width:450px) and (max-width:800px) {
+    /*MENU*/
+        .logo {
+            margin-left: 30px;
+        }
+
+        .menu_opener {
+            display: block;
+            width: 45px;
+            margin-right: 30px;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 70vw;
+            height: calc(100vh - 100px);
+            top: 100px;
+            right: 0;
+        }
+
+        .menu ul {
+            flex-direction: column;
+        }
+
+        .menu li a {
+            font-weight: bold;
+            height: 80px;
+            font-size: 27px;
+            margin-right: 50px;
+            border: 0;
+        }
+
+        .menu li.active a {
+            border: 0;
+            color: #B28756;
+        }
+    /*MENU*/
+
+    /*ABOUT US*/
+        .section_aboutus {
+            flex-direction: column;
+        }
+
+        .section_aboutus_left {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .section_aboutus_right {
+            width: auto;
+        }
+    /*ABOUT US*/
+
+    /*SERVICES*/
+        .section_services {
+            flex-wrap: wrap;
+        }
+
+        .section_service {
+            min-width: 50%;
+            margin-bottom: 30px;
+        }
+
+        .section_service:first-child {
+            border-left: 0;
+        }
+
+        .section_service:nth-child(3), .section_service:nth-child(4) {
+            margin-bottom: 0;
+        }
+    /*SERVICES*/
+
+    /*OUR TEAM*/
+        .section_team {
+            max-width: 580px;
+        }
+    /*OUR TEAM*/
+
+    /*HAPPY CLIENTS*/
+        .section_clients .slidearea {
+            margin-right: 0;
+        }
+
+        .section_clients .sliders_pointers {
+            padding-right: 0;
+        }
+
+        .companys {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    /*HAPPY CLIENTS*/
+
+    /*PRICE*/
+        .prices_area {
+            flex-wrap: wrap;
+        }
+
+        .price {
+            min-width: calc(50% - 40px);
+            margin-left: 20px;
+            margin-bottom: 30px;
+            flex: none;
+        }
+    /*PRICE*/
+
+    /*FEATURES*/
+        .products_features .slidearea {
+            width: auto;
+        }
+    /*FEATURES*/
+
+    /*SOME FACTS*/
+        .section_facts {
+            flex-wrap: wrap;
+        }
+
+        .section_fact {
+            min-width: 50%;
+            margin-bottom: 30px;
+        }
+
+        .section_fact:nth-child(3), .section_fact:nth-child(4) {
+            margin-bottom: 0;
+        }
+    /*SOME FACTS*/
+
+    /*MAP*/
+        .section_map {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .map_area {
+            width: auto;
+        }
+
+        .map_info {
+            width: auto;
+        }
+
+        .map_info_item {
+            margin-bottom: 20px;
+        }
+        
+        .map_info_item:last-child {
+            margin-bottom: 0;
+        }
+    /*MAP*/
+
+    /*FOOTER*/
+        .footer_social_media {
+            justify-content: center;
+        }
+
+        footer h4 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .footer_descrip_and_subscrive {
+            display: flex;
+            flex: 1;
+            margin-left: 0;
+        }
+
+        .footer_contents {
+            flex-direction: column;
+        }
+
+        .footer_descrip {
+            margin-left: 30px;
+        }
+
+        .footer_subscribe {
+            margin-right: 30px;
+        }
+    /*FOOTER*/
+}
+
+@media (max-width:450px) {
+    /*MENU*/
+        .logo {
+            margin-left: 30px;
+        }
+
+        .menu_opener {
+            display: block;
+            width: 45px;
+            margin-right: 30px;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 80vw;
+            height: calc(100vh - 100px);
+            top: 100px;
+            right: 0;
+        }
+
+        .menu ul {
+            flex-direction: column;
+        }
+
+        .menu li a {
+            font-weight: bold;
+            height: 60px;
+            font-size: 20px;
+            margin-right: 30px;
+            border: 0;
+        }
+
+        .menu li.active a {
+            border: 0;
+            color: #B28756;
+        }
+    /*MENU*/
+
+    /*BANNER*/
+        .banner h1 {
+            font-size: 30px;
+        }
+
+        .banner h2 {
+            font-size: 17px;
+        }
+    /*BANNER*/
+
+    /*ABOUT US*/
+        .section_aboutus {
+            flex-direction: column;
+        }
+
+        .section_aboutus_left {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .section_aboutus_right {
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .section_aboutus_right img {
+            width: 100%;
+        }
+    /*ABOUT US*/
+
+    /*SERVICES*/
+        .section_services {
+            flex-wrap: wrap;
+        }
+
+        .section_service {
+            min-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .section_service:first-child {
+            border-left: 0;
+        }
+
+        .section_service:nth-child(4) {
+            margin-bottom: 0;
+        }
+    /*SERVICES*/
+
+    /*OUR PROJECTS*/
+        .section_projects_filters {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .section_projects_photo {
+            width: 320px;
+        }
+
+        .section_projects_photo_area {
+            width: 300px;
+            height: 190px;
+        }
+    /*OUR PROJECTS*/
+
+    /*OUR TEAM*/
+        .section_team {
+            max-width: 280px;
+        }
+    /*OUR TEAM*/
+
+    /*HAPPY CLIENTS*/
+        .section_clients .slidearea {
+            margin-right: 0;
+        }
+
+        .section_clients .sliders_pointers {
+            padding-right: 0;
+        }
+
+        .companys_area {
+            flex-wrap: wrap;
+        }
+
+        .company_logo {
+            min-width: 50%;
+            margin-bottom: 25px;
+        }
+
+        .company_logo:nth-child(5), .company_logo:nth-child(6) {
+            margin-bottom: 0;
+        }
+    /*HAPPY CLIENTS*/
+
+    /*PRICE*/
+        .prices_area {
+            flex-wrap: wrap;
+        }
+
+        .price {
+            min-width: calc(100% - 40px);
+            margin-left: 20px;
+            margin-bottom: 30px;
+            flex: none;
+        }
+    /*PRICE*/
+
+    /*FEATURES*/
+        .products_features .slidearea {
+            padding-bottom: 0;
+        }
+
+        .features .slidearea {
+            flex-direction: column;
+        }
+        .products_features .slidearea {
+            width: auto;
+        }
+
+        .product_photo {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .product_photo img {
+            margin-right: 0;
+            text-align: center;
+        }
+
+        .products_feature_button a {
+            margin-left: 0;
+        }
+    /*FEATURES*/
+
+    /*SOME FACTS*/
+        .section_facts {
+            flex-wrap: wrap;
+        }
+
+        .section_fact {
+            min-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .section_fact:nth-child(4) {
+            margin-bottom: 0;
+        }
+    /*SOME FACTS*/
+
+    /*TELL ABOUT US*/
+        .social_media_body {
+            display: block;
+        }
+
+        .left_side img {
+            display: none;
+        }
+
+        .left_side {
+            margin-bottom: 15px;
+        }
+
+        .left_side h4 {
+            margin-right: 0;
+        }
+        
+        .social_media_share {
+            flex-direction: column;
+            margin-right: 5px;
+        }
+
+        .social_media_share:last-child {
+            margin-right: 0;
+        }
+
+        .social_media_share .numbers {
+            margin: inherit;
+            margin-top: 5px;
+        }
+
+        .social_media_share .numbers:last-child {
+            margin-right: 5px;
+        }
+    /*TELL ABOUT US*/
+
+    /*CONTACT US*/
+        .name_email_input {
+            display: block;
+        }
+
+        .section_contact_us form {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .section_contact_us textarea {
+            height: 60px;
+            padding-top: 30px;
+        }
+    /*CONTACT US*/
+
+    /*MAP*/
+        .section_map {
+            padding: 0;
+            padding-bottom: 250px;
+        }
+
+        .map_area {
+            width: auto;
+        }
+
+        .map_info {
+            width: auto;
+        }
+
+        .map_info_item {
+            margin-bottom: 20px;
+        }
+        
+        .map_info_item:last-child {
+            margin-bottom: 0;
+        }
+    /*MAP*/
+
+    /*FOOTER*/
+        .footer_social_media {
+            justify-content: center;
+        }
+
+        footer h4 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .footer_descrip_and_subscrive { 
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 30px;
+        }
+
+        .footer_contents {
+            flex-direction: column;
+        }
+
+        .footer_descrip {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .footer_subscribe {
+            width: auto;
+            margin-left: 30px;
+        }
+    /*FOOTER*/
+}
