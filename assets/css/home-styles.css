@@ -847,7 +847,8 @@ header {
             margin-top:10px;
         }
 
-        .section_contact_us input[type=text]:hover, .section_contact_us input[type=email]:hover, .section_contact_us textarea:hover {
+        .section_contact_us input[type=text]:hover, .section_contact_us input[type=email]:hover, .section_contact_us textarea:hover,
+        .section_contact_us input[type=text]:focus, .section_contact_us input[type=email]:focus, .section_contact_us textarea:focus {
             border-bottom: 1px solid #B28756;
         }
 
@@ -998,6 +999,7 @@ header {
         outline:0;
         margin: auto;
         text-align: center;
+        color: #FFFFFF;
     }
 
     .footer_subscribe input::placeholder {
@@ -1006,11 +1008,59 @@ header {
         font-size: 12px;
     }
 
+    .footer_subscribe input[type=email]:hover, .footer_subscribe input[type=email]:focus {
+        border-bottom: 1px solid #B28756;
+    }
+
     .footer_subscribe input[type=submit] {
         border: 0;
         display: flex;
         margin: auto;
         margin-top: 30px;
+    }
+
+    .footer_creator {
+        background-color: #333;
+        max-width: 1140px;
+        margin: auto;
+        margin-top: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 3px;
+    }
+
+    .footer_creator_social_media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_creator_social_media div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        margin-right: 8px;
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        padding: 18px;
+        cursor: pointer;
+    }
+
+    .footer_creator_social_media div:hover {
+        background-color: #B28756;
+    }
+
+    .footer_creator_social_media img {
+        display: flex;
+    }
+
+    .footer_creator_descrip {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: 600;
     }
 /*FOOTER*/
 
