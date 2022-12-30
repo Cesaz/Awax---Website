@@ -2,7 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+/*SCROLL BAR COLORS*/
+    /* Works on Firefox */
+    * {
+    scrollbar-width: thin;
+    scrollbar-color: #B28756 #333;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+    width: 12px;
+    }
+
+    *::-webkit-scrollbar-track {
+    background: #333;
+    }
+
+    *::-webkit-scrollbar-thumb {
+    background-color: #B28756;
+    border-radius: 20px;
+    border: 3px solid #333;
+    }
+/*SCROLL BAR COLORS*/
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -803,6 +827,10 @@ header {
             margin-right: 5px;
         }
 
+        .social_media_logo img {
+            margin-top: 4px;
+        }
+
         .twitter_logo {
             background-color: #00acee;
         }
@@ -1022,6 +1050,7 @@ header {
     .footer_creator {
         background-color: #333;
         max-width: 1140px;
+        width: 100vw;
         margin: auto;
         margin-top: 25px;
         padding-top: 15px;
@@ -1059,8 +1088,19 @@ header {
     .footer_creator_descrip {
         text-align: center;
         margin-top: 15px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 600;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .footer_creator_descrip a {
+        text-decoration: none;
+        color: #B28756;
+    }
+
+    .footer_creator_descrip a:hover {
+        color: #000000;
     }
 /*FOOTER*/
 
@@ -1246,6 +1286,10 @@ header {
 
         .footer_subscribe {
             margin-right: 30px;
+        }
+
+        .footer_creator {
+            width: 90%;
         }
     /*FOOTER*/
 }
@@ -1547,6 +1591,10 @@ header {
         .footer_subscribe {
             width: auto;
             margin-left: 30px;
+        }
+
+        .footer_creator {
+            width: 90%;
         }
     /*FOOTER*/
 }

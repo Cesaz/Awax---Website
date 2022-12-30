@@ -5,13 +5,14 @@
         <title>Awax</title>
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
         <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap'); </style>
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/home-styles.css"/>
     </head>
 
     <body>
 
         <header>
-            <div class="header">
+            <div class="header" id="home">
                 <div class="logo">
                     <div class="logoimg"></div>
                 </div>
@@ -19,15 +20,15 @@
                     <img class="menu_opener" src="assets/images/menu.png" alt="">
                     <nav>
                         <ul>
-                            <li class="active"><a href="">Home</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Our Projects</a></li>
-                            <li><a href="">Our Team</a></li>
-                            <li><a href="">Happy Clients</a></li>
-                            <li><a href="">Price</a></li>
-                            <li><a href="">Some Facts</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about_us">About us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#our_projects">Our Projects</a></li>
+                            <li><a href="#our_team">Our Team</a></li>
+                            <li><a href="#happy_clients">Happy Clients</a></li>
+                            <li><a href="#price">Price</a></li>
+                            <li><a href="#some_facts">Some Facts</a></li>
+                            <li><a href="#contact_us">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,7 +59,7 @@
                 </div>
             </section>
 
-            <section class="default light">
+            <section class="default light" id="about_us">
                 <div class="section_title">About us</div>
                 <div class="section_desc">Who we are?</div>
                 <div class="section_body">
@@ -75,7 +76,7 @@
                 </div>
             </section>
 
-            <section class="default dark">
+            <section class="default dark" id="services">
                 <div class="section_title">Services</div>
                 <div class="section_desc">Services tha we provide</div>
                 <div class="section_body">
@@ -104,7 +105,7 @@
                 </div>
             </section>
 
-            <section class="default light">
+            <section class="default light" id="our_projects">
                 <div class="section_title">Our Projects</div>
                 <div class="section_desc">What we create</div>
                 <div class="section_body">
@@ -232,10 +233,9 @@
                         <a href="" class="button">More Projects</a>
                     </div>
                 </div>
-                
             </section>
 
-            <section class="default dark bgteam">
+            <section class="default dark bgteam" id="our_team">
                 <div class="section_team_area">
                     <div class="section_title">Our Team</div>
                     <div class="section_desc">Our Co-Workers</div>
@@ -309,7 +309,7 @@
                 </div>
             </section>
 
-            <section class="default light clients_review">
+            <section class="default light clients_review" id="happy_clients">
                 <div class="section_title">Happy clients</div>
                 <div class="section_desc">Client reviews</div>
                 <div class="section_body">
@@ -377,7 +377,7 @@
                 </div>
             </section>
 
-            <section class="default light">
+            <section class="default light" id="price">
                 <div class="section_title">Price</div>
                 <div class="section_desc">Pricing table</div>
                 <div class="section_body">
@@ -492,7 +492,7 @@
                 </div>
             </section>
 
-            <section class="default dark">
+            <section class="default dark" id="some_facts">
                 <div class="section_title">Some facts</div>
                 <div class="section_desc">About our work</div>
                 <div class="section_body">
@@ -535,31 +535,31 @@
                         <div class="right_side">
                             <div class="social_media_share">
                                 <div class="social_media_logo twitter_logo">
-                                    <img src="assets/images/twitter.png" alt="">
+                                    <a href="https://www.twitter.com" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
                                 </div>
                                 <div class="numbers">152</div>
                             </div>
                             <div class="social_media_share">
                                 <div class="social_media_logo linkedin_logo">
-                                    <img src="assets/images/linkedin.png" alt="">
+                                    <a href="https://www.linkedin.com/" target="_blank"><img src="assets/images/linkedin.png" alt=""></a>
                                 </div>
                                 <div class="numbers">31</div>
                             </div>
                             <div class="social_media_share">
                                 <div class="social_media_logo facebook_logo">
-                                    <img src="assets/images/facebook.png" alt="">
+                                    <a href="https://www.facebook.com" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
                                 </div>
                                 <div class="numbers">165</div>
                             </div>
                             <div class="social_media_share">
                                 <div class="social_media_logo googleplus_logo">
-                                    <img src="assets/images/googleplus.png" alt="">
+                                    <a href="https://www.google.com" target="_blank"><img src="assets/images/googleplus.png" alt=""></a>
                                 </div>
                                 <div class="numbers">22</div>
                             </div>
                             <div class="social_media_share">
                                 <div class="social_media_logo pinterest_logo">
-                                    <img src="assets/images/pinterest.png" alt="">
+                                    <a href="https://br.pinterest.com/" target="_blank"><img src="assets/images/pinterest.png" alt=""></a>
                                 </div>
                                 <div class="numbers">165</div>
                             </div>
@@ -568,7 +568,7 @@
                 </div>
             </section>
 
-            <section class="default light">
+            <section class="default light" id="contact_us">
                 <div class="section_title">Contact us</div>
                 <div class="section_desc">Our agency located in Melbourne, Australia</div>
                 <div class="section_body">
@@ -622,6 +622,7 @@
                     </div>
                 </div>
             </section>
+
         </main>
 
         <footer>
@@ -647,7 +648,7 @@
                             <a href="https://www.google.com" target="_blank"><img src="assets/images/googleplus.png" alt=""></a>
                         </div>
                         <div>
-                            <a href="https://www.notexist.com" target="_blank"><img src="assets/images/dots.png" alt=""></a>
+                            <a href="https://www.sfdsdfgdsg.com" target="_blank"><img src="assets/images/dots.png" alt=""></a>
                         </div>
                     </div>
                     <h4>AWAX © 2016</h4>
@@ -671,28 +672,21 @@
             <div class="footer_creator">
                 <div class="footer_creator_social_media">
                     <div>
-                        <a href="" target="_blank"><img src="assets/images/github.png" alt=""></a>
+                        <a href="https://github.com/Cesaz" target="_blank"><img src="assets/images/github.png" alt=""></a>
                     </div>
                     <div>
                         <a href="" target="_blank"><img src="assets/images/linkedin.png" alt=""></a>
                     </div>
                     <div>
-                        <a href="" target="_blank"><img src="assets/images/codepen.png" alt=""></a>
+                        <a href="https://codepen.io/_cesaz" target="_blank"><img src="assets/images/codepen.png" alt=""></a>
                     </div>
                 </div>
                 <div class="footer_creator_descrip">
-                    <h5>Created by <a href="https://www.instagram.com/_cesaz/">César Augusto.</a></h5>
-                    <h5>Product designer created by <a href="https://www.behance.net/gallery/58301549/Free-Landing-Page">Alexander Bukin</a></h5>
+                    <h5>Created by <a href="https://www.instagram.com/_cesaz/" target="_blank">César Augusto</a></h5>
+                    <h5>Product designer created by <a href="https://www.behance.net/gallery/58301549/Free-Landing-Page" target="_blank">Alexander Bukin</a></h5>
                 </div>
             </div>
-            
         </footer>
-
-
-        
-        
-        
-
 
     </body>
 </html>
